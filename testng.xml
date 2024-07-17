@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Seleniumgrid" parallel="tests" thread-count="5">
+    <test name="test1">
+         <classes>
+           <class name="selenium.TestClass1"/>
+            <!--  <class name="selenium.cls"/> -->
+           <!--  <class name="ui.Seleniumgrid"/> -->
+        </classes>
+     <!--       <packages>
+            <package name="ui"/>
+        </packages> -->
+    </test>
+
+    <!-- Add more tests as needed -->
+</suite>

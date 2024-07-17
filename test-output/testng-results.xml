@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-17T14:12:40 IST" name="Seleniumgrid" finished-at="2024-07-17T14:12:42 IST" duration-ms="2691">
+    <groups>
+    </groups>
+    <test started-at="2024-07-17T14:12:40 IST" name="test1" finished-at="2024-07-17T14:12:42 IST" duration-ms="2691">
+      <class name="resttest.WireMockTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:resttest.WireMockTest@1a5b6f42]" started-at="2024-07-17T14:12:40 IST" name="setup" finished-at="2024-07-17T14:12:41 IST" duration-ms="1211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCreate()[pri:0, instance:resttest.WireMockTest@1a5b6f42]" started-at="2024-07-17T14:12:41 IST" name="testCreate" finished-at="2024-07-17T14:12:42 IST" duration-ms="1368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate -->
+        <test-method signature="testCreate1()[pri:0, instance:resttest.WireMockTest@1a5b6f42]" started-at="2024-07-17T14:12:42 IST" name="testCreate1" finished-at="2024-07-17T14:12:42 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate1 -->
+        <test-method signature="testCreate2()[pri:0, instance:resttest.WireMockTest@1a5b6f42]" started-at="2024-07-17T14:12:42 IST" name="testCreate2" finished-at="2024-07-17T14:12:42 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreate2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:resttest.WireMockTest@1a5b6f42]" started-at="2024-07-17T14:12:42 IST" name="teardown" finished-at="2024-07-17T14:12:42 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- resttest.WireMockTest -->
+    </test> <!-- test1 -->
+  </suite> <!-- Seleniumgrid -->
+</testng-results>
