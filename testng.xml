@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Seleniumgrid" parallel="tests" thread-count="5">
+<suite name="Seleniumgrid" parallel="tests" thread-count="1">
+
+    <listeners>
+        <listener class-name="utility.ExtentReportListener" />
+    </listeners>
+      <listeners>
+	        <listener class-name="utility.AnnotationTransformer"/>
+	  </listeners> 
+     
     <test name="test1">
          <classes>
-           <class name="selenium.TestClass1"/>
+           <class name="selenium.JavaScriptExecutor"/>
             <!--  <class name="selenium.cls"/> -->
            <!--  <class name="ui.Seleniumgrid"/> -->
         </classes>

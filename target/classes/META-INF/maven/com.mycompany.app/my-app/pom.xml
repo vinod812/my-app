@@ -58,6 +58,23 @@
         <artifactId>extentreports</artifactId>
         <version>5.0.9</version>
     </dependency>
+       <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-databind</artifactId>
+        <version>2.12.3</version>
+    </dependency>
+    <dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-csv</artifactId>
+    <version>1.9.0</version>
+</dependency>
+    
 
+   <!-- JSON Schema Validator dependency -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>json-schema-validator</artifactId>
+        <version>4.3.3</version>
+    </dependency>
   </dependencies>
 </project>

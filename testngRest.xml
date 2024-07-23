@@ -9,7 +9,7 @@
     </listeners>
     <test name="test1">
          <classes>
-           <class name="resttest.WireMockTest"/>
+           <class name="resttest.RestHandsOn"/>
             <!--  <class name="selenium.cls"/> -->
            <!--  <class name="ui.Seleniumgrid"/> -->
         </classes>

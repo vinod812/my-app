@@ -6,7 +6,7 @@ import com.github.tomakehurst.wiremock.client.WireMock;
 public class Wiremock {
 	
 	public static void main(String[] args) {
-		WireMockServer wiremockserver = new WireMockServer();
+	/*	WireMockServer wiremockserver = new WireMockServer();
 		wiremockserver.start();
 		WireMock.configureFor("localhost", 8081);
         // Stub a request
@@ -20,7 +20,7 @@ public class Wiremock {
 
         // Stop the WireMock server
         //wireMockServer.stop();
-
+*/
 		
 	}
 

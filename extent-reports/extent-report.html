@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 17, 2024 02:12:39 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 21, 2024 06:09:31 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,7 +66,8 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +75,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="skip" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">testCreate</p>
+            <p class="name">testJavaScriptExecutor</p>
             <p class="text-sm">
-              <span>2:12:41 PM</span> / <span>00:00:01:352</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>6:09:31 PM</span> / <span>00:00:24:886</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCreate</h5>
-<span class='badge badge-success'>07.17.2024 2:12:41 PM</span>
-<span class='badge badge-danger'>07.17.2024 2:12:42 PM</span>
-<span class='badge badge-default'>00:00:01:352</span>
+<h5 class="test-status text-skip">testJavaScriptExecutor</h5>
+<span class='badge badge-success'>07.21.2024 6:09:31 PM</span>
+<span class='badge badge-danger'>07.21.2024 6:09:56 PM</span>
+<span class='badge badge-default'>00:00:24:886</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -103,77 +104,16 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:12:41 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:09:56 PM</td>
         <td>
-          ChromeDriver initialized
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:12:41 PM</td>
-        <td>
-          Request URI: http://localhost:8081/api/create
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:12:41 PM</td>
-        <td>
-          Request Method: POST
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:12:41 PM</td>
-        <td>
-          Request Headers: Accept=*/*
-Content-Type=application/json
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:12:41 PM</td>
-        <td>
-          Request Body: { "name": "John Doe" }
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:12:42 PM</td>
-        <td>
-          Response Status Code: 200
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:12:42 PM</td>
-        <td>
-          Response Headers: Content-Type=application/json
-Matched-Stub-Id=b6976d73-bbc0-4692-b74f-870e85396ccb
-Content-Encoding=gzip
-Transfer-Encoding=chunked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>2:12:42 PM</td>
-        <td>
-          Response Body: { "message": "Received: John Doe" }
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:12:42 PM</td>
-        <td>
-          GET request successful and response validated
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:12:42 PM</td>
-        <td>
-          Test passed
+          Test skipped: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=126.0.6478.128)
+Build info: version: '3.8.0', revision: '924c4067df', time: '2017-11-30T11:20:39.408Z'
+System info: host: 'LAPTOP-K7D3D6AT', ip: '192.168.210.231', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\VINODV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b6a52ae765e01c7e8759b05eec34c52
         </td>
       </tr>
   </tbody>
@@ -181,25 +121,25 @@ Transfer-Encoding=chunked
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="skip" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">testCreate1</p>
+            <p class="name">testJavaScriptExecutor</p>
             <p class="text-sm">
-              <span>2:12:42 PM</span> / <span>00:00:00:025</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>6:09:56 PM</span> / <span>00:00:17:773</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCreate1</h5>
-<span class='badge badge-success'>07.17.2024 2:12:42 PM</span>
-<span class='badge badge-danger'>07.17.2024 2:12:42 PM</span>
-<span class='badge badge-default'>00:00:00:025</span>
+<h5 class="test-status text-skip">testJavaScriptExecutor</h5>
+<span class='badge badge-success'>07.21.2024 6:09:56 PM</span>
+<span class='badge badge-danger'>07.21.2024 6:10:14 PM</span>
+<span class='badge badge-default'>00:00:17:773</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -210,10 +150,16 @@ Transfer-Encoding=chunked
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:12:42 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:10:14 PM</td>
         <td>
-          Test passed
+          Test skipped: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=126.0.6478.128)
+Build info: version: '3.8.0', revision: '924c4067df', time: '2017-11-30T11:20:39.408Z'
+System info: host: 'LAPTOP-K7D3D6AT', ip: '192.168.210.231', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\VINODV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: be815f7ba7a2fe1c4a894513e9908050
         </td>
       </tr>
   </tbody>
@@ -221,25 +167,25 @@ Transfer-Encoding=chunked
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="skip" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">testCreate2</p>
+            <p class="name">testJavaScriptExecutor</p>
             <p class="text-sm">
-              <span>2:12:42 PM</span> / <span>00:00:00:035</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>6:10:14 PM</span> / <span>00:00:24:750</span>
+              <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testCreate2</h5>
-<span class='badge badge-success'>07.17.2024 2:12:42 PM</span>
-<span class='badge badge-danger'>07.17.2024 2:12:42 PM</span>
-<span class='badge badge-default'>00:00:00:035</span>
+<h5 class="test-status text-skip">testJavaScriptExecutor</h5>
+<span class='badge badge-success'>07.21.2024 6:10:14 PM</span>
+<span class='badge badge-danger'>07.21.2024 6:10:39 PM</span>
+<span class='badge badge-default'>00:00:24:750</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -250,10 +196,108 @@ Transfer-Encoding=chunked
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>2:12:42 PM</td>
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:10:39 PM</td>
         <td>
-          Test passed
+          Test skipped: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=126.0.6478.128)
+Build info: version: '3.8.0', revision: '924c4067df', time: '2017-11-30T11:20:39.408Z'
+System info: host: 'LAPTOP-K7D3D6AT', ip: '192.168.210.231', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\VINODV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57190}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a85c1b96083ba1b6b93f4c5d79769318
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testJavaScriptExecutor</p>
+            <p class="text-sm">
+              <span>6:10:39 PM</span> / <span>00:00:25:136</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testJavaScriptExecutor</h5>
+<span class='badge badge-success'>07.21.2024 6:10:39 PM</span>
+<span class='badge badge-danger'>07.21.2024 6:11:04 PM</span>
+<span class='badge badge-default'>00:00:25:136</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>6:11:04 PM</td>
+        <td>
+          Test skipped: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=126.0.6478.128)
+Build info: version: '3.8.0', revision: '924c4067df', time: '2017-11-30T11:20:39.408Z'
+System info: host: 'LAPTOP-K7D3D6AT', ip: '192.168.210.231', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\VINODV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57225}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f588f3c59a2f67f0b97f51b86a3ec19b
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testJavaScriptExecutor</p>
+            <p class="text-sm">
+              <span>6:11:04 PM</span> / <span>00:00:24:960</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testJavaScriptExecutor</h5>
+<span class='badge badge-success'>07.21.2024 6:11:04 PM</span>
+<span class='badge badge-danger'>07.21.2024 6:11:29 PM</span>
+<span class='badge badge-default'>00:00:24:960</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>6:11:29 PM</td>
+        <td>
+          Test failed: org.openqa.selenium.JavascriptException: javascript error: Cannot read properties of null (reading 'click')
+  (Session info: chrome=126.0.6478.128)
+Build info: version: '3.8.0', revision: '924c4067df', time: '2017-11-30T11:20:39.408Z'
+System info: host: 'LAPTOP-K7D3D6AT', ip: '192.168.210.231', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\VINODV~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57261}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc9d61eb5c43ebcb9a0436f29e603ef8
         </td>
       </tr>
   </tbody>
@@ -275,25 +319,25 @@ Transfer-Encoding=chunked
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 17, 2024 02:12:39 PM</h3>
+<h3>Jul 21, 2024 06:09:31 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 17, 2024 02:12:42 PM</h3>
+<h3>Jul 21, 2024 06:11:29 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>3</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -309,13 +353,13 @@ Transfer-Encoding=chunked
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>3</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='20%'><b>1</b> tests failed,
+<b>4</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -332,10 +376,10 @@ Transfer-Encoding=chunked
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='33%'><b>4</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>8</b> others
+<small data-tooltip='20%'><b>1</b> events failed,
+<b data-tooltip='%'>4</b> others
 </small>
 </div>
 </div>
@@ -351,7 +395,7 @@ Transfer-Encoding=chunked
 </div></div>
 <script>
 var timeline = {
-"testCreate":1.352,"testCreate1":0.025,"testCreate2":0.035
+"testJavaScriptExecutor":24.886,"testJavaScriptExecutor":17.773,"testJavaScriptExecutor":24.75,"testJavaScriptExecutor":25.136,"testJavaScriptExecutor":24.96
 };
 </script>
 <div class="row">
@@ -360,10 +404,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
-skipParent: 0,
+skipParent: 4,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -377,11 +421,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 4,
-failEvents: 0,
+passEvents: 0,
+failEvents: 1,
 warningEvents: 0,
-skipEvents: 0,
-infoEvents: 8
+skipEvents: 4,
+infoEvents: 0
 };
 </script>        </div>
       </div>
