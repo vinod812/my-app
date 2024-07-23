@@ -26,7 +26,7 @@ jobs:
           restore-keys: ${{ runner.os }}-maven
 
       - name: Install dependencies
-        run: mvn install --quiet --batch-mode --no-transfer-progress --projects your-project --also-make
+        run: mvn install --quiet --batch-mode --no-transfer-progress --projects my-app --also-make
 
       - name: Run Rest Assured tests
         run: mvn test --projects your-project --also-make
